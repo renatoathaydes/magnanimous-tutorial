@@ -9,9 +9,11 @@
 <header id="home" class="header">
 <nav class="navigation">
     <section class="container">
-        <a href="/index.html" class="button">Home</a>
+        <a href="/index.html" 
+            class="button{{if name != `Home`}} button-outline{{end}}">Home</a>
         {{ for section /processed/sections/ }}\
-        <a href="{{ eval section }}" class="button">{{ eval section.name }}</a>
+        <a href="{{ eval section }}" 
+            class="button{{if name != section.name}} button-outline{{end}}">{{ eval section.name }}</a>
         {{ end }}\
     </section>
 </nav>
