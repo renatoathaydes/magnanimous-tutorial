@@ -7,6 +7,14 @@
 </head>
 <body>
 <header id="home" class="header">
+<nav class="navigation">
+    <section class="container">
+        <a href="/index.html" class="button">Home</a>
+        {{ for section /processed/sections/ }}\
+        <a href="{{ eval section }}" class="button">{{ eval section }}</a>
+        {{ end }}\
+    </section>
+</nav>
 <section class="container">
     <h1>Demo Website</h1>
     <p class="description">A Magnanimous demo website</p>
