@@ -11,7 +11,7 @@
     <section class="container">
         <a href="/index.html" class="button">Home</a>
         {{ for section /processed/sections/ }}\
-        <a href="{{ eval section }}" class="button">{{ eval section }}</a>
+        <a href="{{ eval section }}" class="button">{{ eval section.name }}</a>
         {{ end }}\
     </section>
 </nav>

@@ -1,3 +1,4 @@
+{{ define name "Contact Us" }}\
 {{ include /processed/_header.html }}
 ## Contact Us
 

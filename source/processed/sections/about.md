@@ -1,3 +1,4 @@
+{{ define name "About" }}\
 {{ include /processed/_header.html }}
 ## About
 
