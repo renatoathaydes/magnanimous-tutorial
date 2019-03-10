@@ -1,2 +1,2 @@
 Global context for local deployment: the website will be under the web server's root path
-\{{ define baseURL "" }}
+{{ define baseURL "" }}
